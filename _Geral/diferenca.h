@@ -12,7 +12,7 @@ namespace diferenca {
 				bool b1 = (n1%2)==1;
 				bool b2 = (n2%2)==1;
 			if(_tp==PARES) {
-				if(b1)       // se impar
+				if(b1)     // se impar
 					n1+=1; // vira par
 				if(b2)
 					n2+=1;
