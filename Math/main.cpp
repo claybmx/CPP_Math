@@ -12,13 +12,15 @@ int main() {
 	//math::_divByUsage();
 	//math::_divisoresUsage();
 	//math::_fatoresPrimosUsage();
+	//math::_fatorialUsage();
 	//math::_mdcUsage2();
-	//math::_mmcUsage2();
+	math::_mmcUsage2();
 	//math::_multiplosUsage();
+	//math::_powerUsage();
 	//math::_raizDigitalUsage();
 	//math::_primeUsage();
 	//math::_rootUsage();
-	math::_fatorialUsage();
+	
 
 	system("pause");
 	return(0);

@@ -1,5 +1,6 @@
 #pragma once
 #include "..\Math\_divisores.h"
+#include "utils.h"
 
 namespace math {
 
@@ -8,10 +9,12 @@ namespace math {
 		va_list args;
 		va_start(args, _sz);
 		vetorUInt A = _divisores<unsigned int>(va_arg(args, int));
-		vetorUInt B;
+		//vetorUInt B;
+		for(unsigned int a=0; a < A.size(); a++)
+			std::cout << A.at(a) << std::endl;
 
 		for(int i=0; i<_sz-1; i++) {
-			B = _divisores<unsigned int>(va_arg(args, int));
+			vetorUInt B = _divisores<unsigned int>(va_arg(args, int));
 			for(unsigned int a=0; a < A.size(); a++)
 				for(unsigned int b=0; b < B.size(); b++)
 					if(A[a]==B[b])
